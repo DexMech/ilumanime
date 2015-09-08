@@ -1,0 +1,424 @@
+<!doctype html>
+<html>
+<head>
+    <title>ILUMANIME</title>
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	 
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/local.css">
+	<link rel="stylesheet" href="css/meutema.min.css">
+    <link rel="stylesheet" href="css/jquery.mobile.icons.min.css">
+   
+      
+     
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+     <script>
+	 function limpaContainer(){
+	  $(".receptor").html("");
+	 }
+	 function mostraNomeCosplay(nome){
+	 
+	 if(nome=="andré"){
+	 
+	 $(".receptor").html("<p>Andr&eacute Zani</p>");
+	 
+	 }else if(nome=="orochi"){
+	 
+	 $(".receptor").html("<p>Tia Orochi</p></div>");
+	 
+	 }else if(nome=="grupoCox"){
+	 
+	 $(".receptor").html("<p>Grupo CoxMix</p></div>");
+	 
+	 }else if(nome=="aline"){
+	 
+	 $(".receptor").html("<p>Aline Hirata</p></div>");
+	 
+	 }else if(nome=="shiz"){
+	 
+	 $(".receptor").html("<p>Shizue</p></div>");
+	 
+	 }else if(nome=="john"){
+	 
+	 $(".receptor").html("<p>Jo&atilde;o Vitor</p></div>");
+	 
+	 }else if(nome=="mauri"){
+	 
+	 $(".receptor").html("<p>Mauricio Tousen</p></div>");
+	 
+	 }else if(nome=="babi"){
+	 
+	 $(".receptor").html("<p>Babi Sparrow</p></div>");
+	 
+	 }else {
+	 
+	 $(".receptor").html("<p>Let&iacute;cia</p></div>");
+	 
+	 }
+	 
+	 
+	 }
+	 function mostraNomeBanda(nome){
+	  if(nome=="cadenza"){
+	 
+	 $(".receptor").html("<p>Cadenza</p>");
+	 
+	 }
+	 
+	 
+	 
+	 }
+	 $( document ).on( "pagecreate", function() {
+    $( ".photopopup" ).on({
+        popupbeforeposition: function() {
+            var maxHeight = $( window ).height() - 60 + "px";
+            $( ".photopopup img" ).css( "max-height", maxHeight );
+        }
+    });
+});
+	   $(document).on("pagecreate","#main_page",function(){
+		  var dt= new Date(2015,09,26);
+		   var n = new Date();
+		   var recebe= dt.getDate()-n.getDate()-1;
+		   if(recebe>0){
+		   $("#diasFaltam").text("Faltam "+recebe+" dias!!");
+		   }else{
+		    $("#diasFaltam").html("<div id=\"diasFaltam\">O Evento Come&ccedil;a hojee!!</div>");
+		   }
+		   
+		   });
+		   $(document).on("pagecreate","#var_chegar",function(){
+		   $("#imgmap").on("tap",function(){
+		 
+		   
+		  
+		   $(this).css("width","100%");
+		   
+		 
+		   
+		   });
+		   
+		   
+		   
+		   });
+		   
+		   </script>
+	 
+
+
+    
+    
+    
+   
+  
+</head>
+<body>
+    <div data-role="page" id="main_page">
+ <a href="#main_page" data-transition="flip" ><img id="cu"src="images/logo_1.png" alt="Ilumanime"  height="100px" /></a>
+      <div id="diasFaltam" style="text-align: left margin-bottom:20px z-index:1">teste</div>
+        <div data-role="header" >
+        
+        
+           <div data-role="navbar" class="ui-shadow">
+           <ul>
+          
+            <li><a href="#var_sobre" data-transition="slide">Sobre </a></li>
+            <li> <a href="https://ilumanime.com.br/acompanhar-inscricao.html"  > Inscri&ccedil;&otilde;es</a></li>
+ <li><a href="#var_atracoes" data-transition="pop">Atra&ccedil;&otilde;es</a></li>  
+<li><a href="#var_cosplay" data-transition="fade">Cosplays</a></li> 
+        <li><a href="#var_chegar" data-transition="slideup">Como Chegar</a></li>
+        </ul>
+           </div>
+        <!-- /header -->
+ </div>
+        <div data-role="content" id="principal" >
+ <a href="https://ilumanime.com.br/pagina/4-inscri%C3%87%C3%95es" ><img  src="images/ilumanime_logo.png" alt="logo ilumanime"/></a>
+        </div><!-- /content -->
+ 
+        <div data-role="footer">
+            <h4> &copy 2015 Ilumanime</h4>
+        </div><!-- /footer -->
+ 
+    </div><!-- /page -->
+    
+    
+    <div data-role="page" id="var_sobre" data-transition="flip">
+       <div class="image_container">
+     <a href="#main_page" data-transition="flip" ><img src="images/logo_1.png" alt="Ilumanime"  height="100px" /></a>
+     </div>
+    
+     
+        <div data-role="header" id="cabecalho">
+        <div data-role="navbar" >
+      <ul>
+      
+            <li><a href="#" data-transition="slide">Sobre </a></li>
+            <li> <a href="https://ilumanime.com.br/acompanhar-inscricao.html"  > Inscri&ccedil;&otilde;es</a></li>
+ <li><a href="#var_atracoes" data-transition="pop">Atra&ccedil;&otilde;es</a></li>  
+<li><a href="#var_cosplay" data-transition="fade">Cosplays</a></li> 
+        <li><a href="#var_chegar" data-transition="slideup">Como Chegar</a></li>
+        </ul>
+           </div>
+           </div>
+           <div data-role="ui-content" id="conteudo">
+           
+<p >&nbsp;</p>
+<p "text-align: justify;"><span "font-family: arial, helvetica, sans-serif; font-size: 12pt;"><strong>LOCAL:</strong> Memorial da Am&eacute;rica Latina, ao lado do metr&ocirc; Barra Funda.</span></p>
+<p "text-align: justify;">&nbsp;</p>
+<p "text-align: justify;"><span "font-family: arial, helvetica, sans-serif; font-size: 12pt;"><strong>Data: </strong></span></p>
+<p "text-align: justify;"><span "font-family: arial, helvetica, sans-serif; font-size: 12pt;">- 26 de Setembro de 2015, das 11h as 21h.</span></p>
+<p "text-align: justify;"><span "font-family: arial, helvetica, sans-serif; font-size: 12pt;">- 27 de Setembro de 2015, das 10h as 20h.</span></p>
+<p "text-align: justify;"><strong><span "font-family: arial, helvetica, sans-serif; font-size: 12pt;">Apresenta&ccedil;&atilde;o</span></strong></p>
+<p "text-align: justify;"><span "font-family: arial, helvetica, sans-serif; font-size: 12pt;">O Ilumanime (abrevia&ccedil;&atilde;o de Iluminado e Anime) &eacute; um evento novo que acontecer&aacute; na Cidade de S&atilde;o Paulo, inicialmente com a previs&atilde;o de ser um evento anual e com o decorrer se tornar um evento semestral.</span></p>
+<p "text-align: justify;"><span "font-family: arial, helvetica, sans-serif; font-size: 12pt;">O evento esta voltado a cultura oriental, gamers, nerds, cinef&iacute;los, kpopers, cosplayers,&nbsp; otakus e seriados; direcionado para crian&ccedil;as,&nbsp; jovens e grupos familiares. O evento ser&aacute; realizado no Memorial da Am&eacute;rica Latina, pr&oacute;ximo do Metr&ocirc; e Terminal de &Ocirc;nibus Palmeiras-Barra Funda, uma localiza&ccedil;&atilde;o privilegiada. A capacidade do local &eacute; para 10 mil pessoas frequentarem o evento&nbsp; no decorrer do dia.</span></p>
+<p "text-align: justify;"><span "font-family: arial, helvetica, sans-serif; font-size: 12pt;">&nbsp;</span></p>
+<p "text-align: justify;"><span "font-family: arial, helvetica, sans-serif; font-size: 12pt;"><strong>Ingresso:</strong> A entrada do evento custa 1 quilo de alimento n&atilde;o perec&iacute;vel ou 1 livro em bom estado, dever&aacute; ser realizado inscri&ccedil;&atilde;o pela internet, atrav&eacute;s do nosso site: <a href="http://www.ilumanime.com.br/">www.ilumanime.com.br</a>, o participante se inscreve e imprime uma credencial.</span></p>
+<p "text-align: justify;"><span "font-family: arial, helvetica, sans-serif; font-size: 12pt;">&nbsp;</span></p>
+<p "text-align: justify;"><span "font-family: arial, helvetica, sans-serif; font-size: 12pt;"><strong>Entrada do evento:</strong> No dia do evento o participante dever&aacute; levar essa credencial impressa ou no celular junto com 1 quilo de alimento n&atilde;o perec&iacute;vel ou 1 livro em bom estado para acesso ao evento.</span></p>
+<p "text-align: justify;"><span "font-family: arial, helvetica, sans-serif; font-size: 12pt;">&nbsp;</span></p>
+<p "text-align: justify;"><span "font-family: arial, helvetica, sans-serif; font-size: 12pt;"><strong>Parte social:</strong> todos os alimentos e livros arrecadados no evento ser&atilde;o doados para a <a href="http://www.apaesp.org.br">APAE de S&atilde;o Paulo</a>. A institui&ccedil;&atilde;o&nbsp;ir&aacute; recolher os alimentos junto com nossa equipe de Staffs e</span>&nbsp;<span "font-size: 12pt;">ter&atilde;o um estande vendendo produtos institucionais, quem quiser ajudar a entidade al&eacute;m da doa&ccedil;&atilde;o da entrada, pode comprar copos, canecas agendas e outros.</span></p>
+<p "text-align: justify;">&nbsp;</p>
+<p "text-align: justify;"><span "font-family: arial, helvetica, sans-serif; font-size: 12pt;">Toda verba arrecadada com o estande ser&aacute; revertida em atendimentos para as crian&ccedil;as com Defici&ecirc;ncia Intelectual.</span></p>
+<p "text-align: justify;">&nbsp;</p>
+<p "text-align: justify;">&nbsp;</p>
+<p "text-align: justify;">&nbsp;</p>
+<p "text-align: center;"><span "font-family: arial, helvetica, sans-serif; font-size: 12pt;">Curta nossa P&aacute;gina no Facebook:</span></p>
+<center><a href="https://www.facebook.com/ilumanime"><img  src="images/fb.png" alt="" width="64" height="64" /></a></center>
+<p "text-align: center;"><span "font-family: arial, helvetica, sans-serif; font-size: 12pt;">Participe do evento pelo Facebook:&nbsp;<a href="https://www.facebook.com/events/1596225163984497/">https://www.facebook.com/events/1596225163984497/</a></span></p>
+<p "text-align: justify;">&nbsp;</p> 
+
+        </div><!-- /content -->
+ <div data-role="footer" id="rodape">
+            <h4> &copy 2015 Ilumanime</h4>
+        </div>
+    </div>
+     <div data-role="page" id="var_inscricao">
+	   <center><a href="#main_page" data-transition="flip" ><img src="images/logo_1.png" alt="Ilumanime"  height="100px" /></a></center>
+      <div data-role="header">
+     <div data-role="navbar">
+       
+             <ul>
+            
+           <li><a href="#var_sobre" data-transition="slide">Sobre </a></li>
+            <li> <a href="#"  > Inscri&ccedil;&otilde;es</a></li>
+ <li><a href="#var_atracoes" data-transition="pop">Atra&ccedil;&otilde;es</a></li>  
+<li><a href="#var_cosplay" data-transition="fade">Cosplays</a></li> 
+        <li><a href="#var_chegar" data-transition="slideup">Como Chegar</a></li>
+        </ul>
+           </div>
+           </div>
+           <div data-role="content" id="conteudo_inscricao">
+         <div data-role="controlgroup">
+
+
+
+</div>
+        </div>
+ <div data-role="footer">
+            <h4> &copy 2015 Ilumanime</h4>
+        </div>
+    </div>
+    
+    
+    
+     <div data-role="page" id="var_chegar">
+	   <a href="#main_page" data-transition="flip" ><img src="images/logo_1.png" alt="Ilumanime"  height="100px" /></a>
+      <div data-role="header">
+     <div data-role="navbar">
+       
+            <ul>
+            
+           <li><a href="#var_sobre" data-transition="slide">Sobre </a></li>
+            <li> <a href="https://ilumanime.com.br/acompanhar-inscricao.html"  > Inscri&ccedil;&otilde;es</a></li>
+ <li><a href="#var_atracoes" data-transition="pop">Atra&ccedil;&otilde;es</a></li>  
+<li><a href="#var_cosplay" data-transition="fade">Cosplays</a></li> 
+        <li><a href="#" data-transition="slideup">Como Chegar</a></li>
+        </ul>
+           </div>
+           </div>
+           <div data-role="content" >
+		  
+          <a href="#" > <img id="imgmap"src="images/staticmap.png" alt="google images"/></a>
+
+        </div>
+ <div data-role="footer">
+            <h4> &copy 2015 Ilumanime</h4>
+        </div>
+    </div>
+    
+    
+       <div data-role="page" id="var_atracoes">
+	   <a href="#main_page" data-transition="flip" ><img src="images/logo_1.png" alt="Ilumanime"  height="100px" /></a>
+      <div data-role="header">
+     <div data-role="navbar">
+       
+            <ul>
+            
+           <li><a href="#var_sobre" data-transition="slide">Sobre </a></li>
+            <li> <a href="https://ilumanime.com.br/acompanhar-inscricao.html"  >Inscri&ccedil;&otilde;es</a></li>
+ <li><a href="#" data-transition="pop">Atra&ccedil;&otilde;es</a></li>  
+<li><a href="#var_cosplay" data-transition="fade">Cosplays</a></li> 
+        <li><a href="#var_chegar" data-transition="slideup">Como Chegar</a></li>
+		
+        </ul>
+           </div>
+           </div>
+		   
+		   
+           <div data-role="content" id="container_img">
+
+
+ 	<table id="tabela">
+<tr>
+ <td><a href="#popup1" data-rel="popup" data-position-to="window"  data-transition="fade" onclick=mostraNomeBanda("cadenza")><img src="images/cadenza_logo.png" /></a></td>
+ <td><a href="#popup2" data-rel="popup" data-position-to="window"  data-transition="fade" onclick=limpaContainer()><img src="images/carapuca_logo.png" /></a></td>
+ <td><a href="#popup3" data-rel="popup" data-position-to="window"  data-transition="fade" onclick=limpaContainer()><img src="images/cerberus_attack_ilumanime.png" /></a></td>
+ </tr>
+ <tr>
+<td><a href="#popup4" data-rel="popup" data-position-to="window"  data-transition="fade" onclick=limpaContainer()><img src="images/Debuggers_llogo.png" /></a></td>
+<td><a href="#popup5" data-rel="popup" data-position-to="window"  data-transition="fade" onclick=limpaContainer()><img src="images/mr_geek.png" /></a></td>
+<td><a href="#popup6" data-rel="popup" data-position-to="window"  data-transition="fade" onclick=limpaContainer()><img src="images/Nacao_Nacional_logo.png" /></a></td>
+ </tr>
+ <tr>
+<td><a href="#popup7" data-rel="popup" data-position-to="window"  data-transition="fade" onclick=limpaContainer()><img src="images/Seiko_ki_logo.png" /></a></td>
+<td><a href="#popup8" data-rel="popup" data-position-to="window"  data-transition="fade" onclick=limpaContainer()><img src="images/Sliron.png" /></a></td>
+<td><a href="#popup9" data-rel="popup" data-position-to="window"  data-transition="fade" onclick=limpaContainer()><img src="images/Tokyo_Devil_logo.png"  /></a></td>
+ </tr>
+ <tr>
+ <td><a href="#popup10" data-rel="popup" data-position-to="window"  data-transition="fade" onclick=limpaContainer()><img src="images/TraumeR.png" /></a></td>
+
+ </tr>
+ </table>
+ <div data-role="popup" id="popup1" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/cadenza_logo.png" >
+<div class="receptor"></div>
+	</div>
+<div data-role="popup" id="popup2" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/carapuca_logo.png" >
+<div class="receptor"></div>
+	</div>
+<div data-role="popup" id="popup3" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/cerberus_attack_ilumanime.png" >
+<div class="receptor"></div>
+	</div>
+<div data-role="popup" id="popup4" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/Debuggers_llogo.png" >
+<div class="receptor"></div>
+	</div>
+<div data-role="popup" id="popup5" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/mr_geek.png" >
+<div class="receptor"></div>
+	</div>
+<div data-role="popup" id="popup6" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/Nacao_Nacional_logo.png" >
+<div class="receptor"></div>
+	</div>
+<div data-role="popup" id="popup7" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/Seiko_ki_logo.png" >
+<div class="receptor"></div>
+	</div>
+<div data-role="popup" id="popup8" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/Sliron.png" >
+<div class="receptor"></div>
+	</div>
+<div data-role="popup" id="popup9" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/Tokyo_Devil_logo.png" >
+<div class="receptor"></div>
+	</div>
+	<div data-role="popup" id="popup10" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/TraumeR.png" >
+<div class="receptor"></div>
+	</div>
+  
+    </div>
+       
+     
+<div data-role="footer">
+            <h4> &copy 2015 Ilumanime</h4>
+        </div>
+    </div>
+           
+        </div>
+ 
+    
+    <div data-role="page" id="var_cosplay">
+	   <a href="#main_page" data-transition="flip" ><img src="images/logo_1.png" alt="Ilumanime"  height="100px" /></a>
+      <div data-role="header">
+     <div data-role="navbar">
+          <ul>
+            <li><a href="#var_sobre" data-transition="slide">Sobre </a></li>
+            <li> <a href="https://ilumanime.com.br/acompanhar-inscricao.html"  > Inscri&ccedil;&otilde;es</a></li>
+ <li><a href="#var_atracoes" data-transition="pop">Atra&ccedil;&otilde;es</a></li>  
+<li><a href="#" data-transition="fade">Cosplays</a></li> 
+        <li><a href="#var_chegar" data-transition="slideup">Como Chegar</a></li>
+		
+        </ul>
+           </div>
+           </div>
+	<div data-role="content" id="container_img">
+	<table id="tabela">
+<tr>
+ <td><a href="#popupCos1" data-rel="popup" data-position-to="window"  data-transition="fade" onclick=mostraNomeCosplay("andré")><img src="images/cos1.jpg" /></a></td>
+ <td><a href="#popupCos2" data-rel="popup" data-position-to="window"  data-transition="fade" onclick=mostraNomeCosplay("orochi")><img src="images/cos2.jpg" /></a></td>
+ <td><a href="#popupCos3" data-rel="popup" data-position-to="window"  data-transition="fade" onclick=mostraNomeCosplay("grupoCox")><img src="images/cos3.jpg" /></a></td>
+ </tr>
+ <tr>
+<td><a href="#popupCos4" data-rel="popup" data-position-to="window"  data-transition="fade" onclick=mostraNomeCosplay("aline")><img src="images/cos4.jpg" /></a></td>
+<td><a href="#popupCos5" data-rel="popup" data-position-to="window"  data-transition="fade" onclick=mostraNomeCosplay("shiz")><img src="images/cos5.jpg" /></a></td>
+<td><a href="#popupCos6" data-rel="popup" data-position-to="window"  data-transition="fade" onclick=mostraNomeCosplay("john")><img src="images/cos6.jpg" /></a></td>
+ </tr>
+ <tr>
+<td><a href="#popupCos7" data-rel="popup" data-position-to="window"  data-transition="fade" onclick=mostraNomeCosplay("mauri")><img src="images/cos7.jpg" /></a></td>
+<td><a href="#popupCos8" data-rel="popup" data-position-to="window"  data-transition="fade" onclick=mostraNomeCosplay("babi")><img src="images/cos8.jpg" /></a></td>
+<td><a href="#popupCos9" data-rel="popup" data-position-to="window"  data-transition="fade" onclick=mostraNomeCosplay("leti")><img src="images/cos9.jpg" /></a></td>
+ </tr>
+ </table>
+ <div data-role="popup" id="popupCos1" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/cos1.jpg" >
+<div class="receptor"></div>
+	</div>
+<div data-role="popup" id="popupCos2" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/cos2.jpg" >
+<div class="receptor"></div>
+	</div>
+<div data-role="popup" id="popupCos3" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/cos3.jpg" >
+<div class="receptor"></div>
+	</div>
+<div data-role="popup" id="popupCos4" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/cos4.jpg" >
+<div class="receptor"></div>
+	</div>
+<div data-role="popup" id="popupCos5" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/cos5.jpg" >
+<div class="receptor"></div>
+	</div>
+<div data-role="popup" id="popupCos6" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/cos6.jpg" >
+<div class="receptor"></div>
+	</div>
+<div data-role="popup" id="popupCos7" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/cos7.jpg" >
+<div class="receptor"></div>
+	</div>
+<div data-role="popup" id="popupCos8" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/cos8.jpg" >
+<div class="receptor"></div>
+	</div>
+<div data-role="popup" id="popupCos9" class="photopopup" data-overlay-theme="a" data-corners="false" data-tolerance="30,15">
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/cos9.jpg" >
+<div class="receptor"></div>
+	</div>
+
+     </div>
+     <div data-role="footer" id="rodape">
+            <h4> &copy 2015 Ilumanime</h4>
+        </div>
+		
+		</div>
+    
+</body>
+</html>

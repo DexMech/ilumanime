@@ -1,0 +1,76 @@
+<script src="js/swiper.min.js"></script>
+   <link rel="stylesheet" href="css/swiper.min.css">
+  <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <!-- Required swiper-lazy class and image source specified in data-src attribute -->
+                <img data-src="images/cadenza_logo.png" class="swiper-lazy">
+                <!-- Preloader image -->
+                <div class="images/carapuça_logo"></div>
+            </div>
+            <div class="swiper-slide">
+                <img data-src="images/cerberus_attack_ilumanime.png" class="swiper-lazy">
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+            <div class="swiper-slide">
+                <img data-src="images/Debuggers_llogo.png" class="swiper-lazy">
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+            <div class="swiper-slide">
+                <img data-src="images/mr_geek.png" class="swiper-lazy">
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+            <div class="swiper-slide">
+                <img data-src="images/Seiko_ki_logo.png" class="swiper-lazy">
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+            <div class="swiper-slide">
+                <img data-src="images/Nacao_Nacional_logo.png" class="swiper-lazy">
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+			
+			  <div class="swiper-slide">
+                <img data-src="images/Sliron.png" class="swiper-lazy">
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+			
+			  <div class="swiper-slide">
+                <img data-src="images/Tokyo_Devil_logo.png" class="swiper-lazy">
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+			
+			  <div class="swiper-slide">
+                <img data-src="images/TraumeR.png" class="swiper-lazy">
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+			
+			  <div class="swiper-slide">
+                <img data-src="images/Fio2.png" class="swiper-lazy">
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+            
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-white"></div>
+        <!-- Navigation -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+    </div>
+
+  <script>
+  $(document).on("pagecreate","#var_atracoes",function(){
+    var swiper = new Swiper('.swiper-container', {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        // Disable preloading of all images
+        preloadImages: true,
+        // Enable lazy loading
+        lazyLoading: false,
+		autoplay: 2500,
+        autoplayDisableOnInteraction: true
+    });
+	});
+    </script>
+  
